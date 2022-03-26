@@ -4,7 +4,7 @@
 
 A tiny, friendly, strong baseline code for Person-reID.
 
-- **Strong.** It is consistent with the new baseline result in several top-conference works, e.g., [Joint Discriminative and Generative Learning for Person Re-identification(CVPR19)](https://arxiv.org/abs/1904.07223), [Beyond Part Models: Person Retrieval with Refined Part Pooling(ECCV18)](https://arxiv.org/abs/1711.09349), [Camera Style Adaptation for Person Re-identification(CVPR18)](https://arxiv.org/abs/1711.10295). I arrived Rank@1=88.24%, mAP=70.68% only with softmax loss. 
+- **Strong.** It is consistent with the new baseline result in several top-conference works. I arrived Rank@1=88.24%, mAP=70.68% only with softmax loss. 
 
 - **Small.** With fp16 (supported by Nvidia apex), our baseline could be trained with only 2GB GPU memory.
 
