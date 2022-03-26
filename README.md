@@ -2,21 +2,13 @@
 <h2 align="center"> Strong, Small, Friendly </h2>
 
 
-A tiny, friendly, strong baseline code for Object-reID (based on [pytorch](https://pytorch.org)) since 2017.
+A tiny, friendly, strong baseline code for Person-reID.
 
-- **Strong.** It is consistent with the new baseline result in several top-conference works, e.g., [Joint Discriminative and Generative Learning for Person Re-identification(CVPR19)](https://arxiv.org/abs/1904.07223), [Beyond Part Models: Person Retrieval with Refined Part Pooling(ECCV18)](https://arxiv.org/abs/1711.09349), [Camera Style Adaptation for Person Re-identification(CVPR18)](https://arxiv.org/abs/1711.10295). We arrived Rank@1=88.24%, mAP=70.68% only with softmax loss. 
+- **Strong.** It is consistent with the new baseline result in several top-conference works, e.g., [Joint Discriminative and Generative Learning for Person Re-identification(CVPR19)](https://arxiv.org/abs/1904.07223), [Beyond Part Models: Person Retrieval with Refined Part Pooling(ECCV18)](https://arxiv.org/abs/1711.09349), [Camera Style Adaptation for Person Re-identification(CVPR18)](https://arxiv.org/abs/1711.10295). I arrived Rank@1=88.24%, mAP=70.68% only with softmax loss. 
 
 - **Small.** With fp16 (supported by Nvidia apex), our baseline could be trained with only 2GB GPU memory.
 
 - **Friendly.** You may use the off-the-shelf options to apply many state-of-the-art tricks in one line.
-Besides, if you are new to object re-ID, you may check out our **[Tutorial](https://github.com/layumi/Person_reID_baseline_pytorch/tree/master/tutorial)** first (8 min read) :+1: .
-![](https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/show.png)
-![](https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/show-cub.jpg)
-
-## Tutorial
-* [8 min Tutorial](https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/tutorial/README.md)，[8分钟教程](https://zhuanlan.zhihu.com/p/50387521)
-* [中文视频简介](https://www.bilibili.com/video/BV11K4y1f7eQ)
-* [Answer to Tutorial](https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/tutorial/Answers_to_Quick_Questions.md)
 
 ## Table of contents
 * [Features](#features)
@@ -29,9 +21,6 @@ Besides, if you are new to object re-ID, you may check out our **[Tutorial](http
     * [Train](#train)
     * [Test](#test)
     * [Evaluation](#evaluation)
-* [Tips for training with other datasets](#tips)
-* [How to Cite?](#citation)
-* [Related Repos](#related-repos)
 
 ## Features
 Now we have supported:
