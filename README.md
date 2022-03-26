@@ -42,7 +42,6 @@ The download link is [Here](https://drive.google.com/drive/folders/1O5QgPfAi8yio
 |Methods | Rank@1 | mAP| Reference|
 | -------- | ----- | ---- | ---- |
 | [ResNet-50] | 88.84% | 71.59% |  `python train.py --train_all` |
-| [DenseNet-121] | 90.17% | 74.02% | `python train.py --name ft_net_dense --use_dense --train_all` |
 
 * More training iterations may lead to better results. 
 * Swin costs more GPU memory (11G GPU is needed) to run. 
