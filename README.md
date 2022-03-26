@@ -87,7 +87,7 @@ Because pytorch and torchvision are ongoing projects.
 Here we noted that our code is tested based on Pytorch 0.3.0/0.4.0/0.5.0/1.0.0 and Torchvision 0.2.0/0.2.1 .
 
 ### Dataset & Preparation
-Download [Market1501 Dataset](http://www.liangzheng.com.cn/Project/project_reid.html) [[Google]](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view) [[Baidu]](https://pan.baidu.com/s/1ntIi2Op)
+Download [Market1501 Dataset](https://drive.google.com/file/d/1-57qJxNz6TpaZ6ZOuUZ6IBfIDlA-Crbz/view?usp=sharing)
 
 Preparation: Put the images with the same id in one folder. You may use 
 ```bash
@@ -95,10 +95,6 @@ python prepare.py
 ```
 Remember to change the dataset path to your own path.
 
-Futhermore, you also can test our code on [DukeMTMC-reID Dataset]( [GoogleDriver](https://drive.google.com/open?id=1jjE85dRCMOgRtvJ5RQV9-Afs-2_5dY3O) or ([BaiduYun](https://pan.baidu.com/s/1jS0XM7Var5nQGcbf9xUztw) password: bhbh)).
-Our baseline code is not such high on DukeMTMC-reID **Rank@1=64.23%, mAP=43.92%**. Hyperparameters are need to be tuned.
-
-- [Optional] [DG-Market](https://github.com/NVlabs/DG-Net#dg-market) is a generated pedestrian dataset of 128,307 images for training a robust model.
 
 ### Train
 Train a model by
@@ -145,7 +141,6 @@ python evaluate.py
 It will output Rank@1, Rank@5, Rank@10 and mAP results.
 You may also try `evaluate_gpu.py` to conduct a faster evaluation with GPU.
 
-For mAP calculation, you also can refer to the [C++ code for Oxford Building](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/compute_ap.cpp). We use the triangle mAP calculation (consistent with the Market1501 original code).
 
 ### re-ranking
 ```bash
@@ -154,15 +149,6 @@ python evaluate_rerank.py
 **It may take more than 10G Memory to run.** So run it on a powerful machine if possible. 
 
 It will output Rank@1, Rank@5, Rank@10 and mAP results.
-
-### Tips
-Notes the format of the camera id and the number of cameras.
-
-For some dataset, e.g., MSMT17, there are more than 10 cameras. You need to modify the `prepare.py` and `test.py` to read the double-digit camera ID.
-
-For some vehicle re-ID datasets. e.g. VeRi, you also need to modify the `prepare.py` and `test.py`.  It has different naming rules.
-https://github.com/layumi/Person_reID_baseline_pytorch/issues/107 (Sorry. It is in Chinese)
-
 
 
 ## Related Repos
